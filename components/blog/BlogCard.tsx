@@ -48,7 +48,7 @@ export function BlogCard({ post }: BlogCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Link 
-          href={}
+          href={`/blog/${post.slug}`}
           className="text-sm font-medium text-primary hover:underline"
         >
           Read more
