@@ -1,23 +1,20 @@
+'use client';
+
 import { BlogList } from '@/components/blog/BlogList';
 import { blogPosts } from '@/lib/blog';
 
-export const metadata = {
-  title: 'Blog | My Cool Blog',
-  description: 'Read the latest articles on web development, design, and more.',
-};
-
 export default function BlogPage() {
   return (
-    <div className="container py-12">
-      <div className="mb-12 space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
-          Our Blog
-        </h1>
-        <p className="mx-auto max-w-[700px] text-muted-foreground">
-          Explore our latest articles on web development, design, and technology.
-        </p>
+    <div className="container mx-auto px-4 py-12">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold mb-4">Our Blog</h1>
+          <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
+            Insights, tutorials, and updates from our team
+          </p>
+        </div>
+        <BlogList posts={blogPosts} />
       </div>
-      <BlogList posts={blogPosts} />
     </div>
   );
 }

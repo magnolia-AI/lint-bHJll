@@ -18,7 +18,7 @@ export const blogPosts: Post[] = [
     id: 'nextjs-15-features',
     title: 'Exciting New Features in Next.js 15',
     excerpt: 'Explore the latest features and improvements in Next.js 15 that make web development even better.',
-    content: ,
+    content: 'Next.js 15 introduces several exciting features that enhance developer experience and application performance. The new App Router provides a more intuitive way to handle routing in your applications. Server Components allow you to render components on the server, reducing client-side JavaScript and improving performance. The improved image optimization ensures your images load faster while maintaining quality. Additionally, the new middleware capabilities give you more control over requests before they complete.',
     coverImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     date: '2025-05-15',
     author: {
@@ -30,24 +30,7 @@ export const blogPosts: Post[] = [
     id: 'css-grid-layout',
     title: 'Mastering CSS Grid Layout',
     excerpt: 'Learn how to create complex layouts with CSS Grid.',
-    content: .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-\,
+    content: 'CSS Grid Layout is a powerful tool for creating two-dimensional layouts. Unlike Flexbox, which is primarily designed for one-dimensional layouts, Grid allows you to control both rows and columns simultaneously. This makes it perfect for creating complex page layouts. In this post, we explore how to use CSS Grid effectively, from basic grid creation to advanced techniques like grid template areas and auto-placement algorithms.',
     coverImage: 'https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     date: '2025-05-05',
     author: {
@@ -59,57 +42,7 @@ export const blogPosts: Post[] = [
     id: 'react-hooks-explained',
     title: 'React Hooks Explained',
     excerpt: 'A deep dive into React Hooks and how to use them effectively.',
-    content: \jsx
-import React, { useState } from 'react';
-
-function Counter() {
-  const [count, setCount] = useState(0);
-  
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-\\jsx
-import React, { useState, useEffect } from 'react';
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  // Similar to componentDidMount and componentDidUpdate:
-  useEffect(() => {
-    // Update the document title using the browser API
-    document.title = ;
-  });
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-\\jsx
-import React, { useContext } from 'react';
-
-const ThemeContext = React.createContext('light');
-
-function ThemedButton() {
-  const theme = useContext(ThemeContext);
-  
-  return (
-    <button className={theme}>
-      I am styled by theme context!
-    </button>
-  );
-}
-\,
+    content: 'React Hooks revolutionized how we write React components by allowing us to use state and other React features without writing classes. The useState hook lets you add state to functional components, while useEffect handles side effects like data fetching and subscriptions. The useContext hook provides a way to pass data through the component tree without having to pass props down manually at every level. This post explores these hooks and more, with practical examples to help you understand when and how to use them.',
     coverImage: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     date: '2025-04-28',
     author: {
