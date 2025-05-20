@@ -37,7 +37,7 @@ export function BlogCard({ post }: BlogCardProps) {
         <div className="text-xs text-muted-foreground">
           {format(parseISO(post.date), 'MMMM dd, yyyy')}
         </div>
-        <Link href="" className="group">
+        <Link href={} className="group">
           <h3 className="text-xl font-semibold transition-colors group-hover:text-primary">
             {post.title}
           </h3>
@@ -48,7 +48,7 @@ export function BlogCard({ post }: BlogCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Link 
-          href=""
+          href={}
           className="text-sm font-medium text-primary hover:underline"
         >
           Read more
@@ -57,6 +57,8 @@ export function BlogCard({ post }: BlogCardProps) {
     </Card>
   );
 }
+
+
 
 
 
