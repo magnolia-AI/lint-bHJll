@@ -17,7 +17,7 @@ export function BlogCard({ post }: BlogCardProps) {
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      <Link href={} className="block h-full">
+      <Link className="block h-full">
         <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
           <div className="relative h-48 w-full overflow-hidden">
             <Image 
