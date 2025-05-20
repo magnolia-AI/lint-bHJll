@@ -57,3 +57,6 @@ export function BlogCard({ post }: BlogCardProps) {
     </Card>
   );
 }
+
+
+
