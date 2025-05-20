@@ -37,7 +37,7 @@ export function BlogCard({ post }: BlogCardProps) {
         <div className="text-xs text-muted-foreground">
           {format(parseISO(post.date), 'MMMM dd, yyyy')}
         </div>
-        <Link href={} className="group">
+        <Link href={`/blog/${post.slug}`} className="group">
           <h3 className="text-xl font-semibold transition-colors group-hover:text-primary">
             {post.title}
           </h3>
