@@ -12,7 +12,7 @@ export default function BlogPage() {
           <p className="text-xl text-muted-foreground max-w-[600px] mx-auto">
             Insights, tutorials, and updates from our team
           </p>
-        </div>
+        </div> 
         <BlogList posts={blogPosts} />
       </div>
     </div>
